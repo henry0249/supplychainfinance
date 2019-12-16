@@ -1,0 +1,111 @@
+@import '~antd/lib/style/themes/default.less';
+.container {
+  min-width: 1000px;
+  .backInfo {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    padding: 20px 30px;
+    border: 1px #ffe58f solid;
+    background-color: #fffbe6;
+    .detailsBox {
+      margin-left: 10px;
+      .details {
+        display: flex;
+        .text {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      .btn {
+        color: #1890FF;
+        font-size: 14px;
+        line-height: 26px;
+        cursor: pointer;
+      }
+    }
+  }
+  .cardBox {
+    margin: 24px 0;
+    background-color: #ffffff;
+    .title {
+      display: block;
+      padding: 12px 30px;
+      color: #333333;
+      font: 650 16px/24px normal;
+      border-bottom: 1px #e8e8e8 solid;
+    }
+    .content {
+      padding: 20px 30px 15px;
+      .btnBox {
+        display: flex;
+        justify-content: flex-end;
+      }
+      .itemBox {
+        width: 100%;
+        .header {
+          display: block;
+          padding: 12px 10px;
+          font: bold 14px normal;
+        }
+        .table {
+          .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span {
+              flex: 1;
+              word-wrap: break-word;
+              word-break: break-all;
+              white-space: pre-wrap;
+              min-height: 32px;
+              text-align: center;
+              font: 14px/30px normal;
+              border: 1px #333333 solid;
+              overflow: hidden;
+            }
+            span+span {
+              margin-left: -1px;
+            }
+          }
+          .row+.row {
+            margin-top: -1px;
+          }
+          .totle {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span {
+              flex: 1;
+              word-wrap: break-word;
+              word-break: break-all;
+              white-space: pre-wrap;
+              min-height: 32px;
+              color: #3399FF;
+              text-align: center;
+              font: 14px/30px normal;
+              border: 1px #333333 solid;
+            }
+            span+span {
+              margin-left: -1px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .cardBox+.cardBox {
+    margin-top: 24px;
+  }
+  .noAny {
+    margin: 24px 0;
+    height: 300px;
+    background-color: #ffffff;
+    text-align: center;
+    color: #d9d9d9;
+    font: bold 24px/300px normal;
+  }
+}

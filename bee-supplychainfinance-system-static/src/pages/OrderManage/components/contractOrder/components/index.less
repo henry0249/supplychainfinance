@@ -1,0 +1,69 @@
+@import "~antd/lib/style/themes/default.less";
+
+.contentWrap {
+  margin-bottom: 20px;
+  .contractItem {
+    margin-bottom: 20px;
+    .itemHeader {
+      background-color: rgba(250, 250, 250, 1);
+      border: 1px solid rgba(233, 233, 233, 1);
+      border-radius: 2px;
+      height: 44px;
+      line-height: 44px;
+      font-weight: 600;
+      font-size: 14px;
+      color: #333;
+      padding-left: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .editTitle span{
+        color: #1890FF;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    }
+    .content {
+      padding-top: 10px;
+      padding-left: 20px;
+      border: 1px solid rgba(233, 233, 233, 1);
+      border-top: 0;
+      line-height: 22px;
+      min-height: 137px;
+      border-radius: 0 2px 2px 0;
+      .contentPara {
+        margin-bottom: 10px;
+        .ant-form-item .ant-form-item-label{
+          display: inline-block;
+        }
+        
+        .contractCode {
+          color: rgba(0, 0, 0, 0.647058823529412);
+          font-size: 14px;
+          font-weight: 600;
+        }
+        .contractDetail {
+          font-size: 14px;
+          color: rgba(0, 0, 0, 0.847058823529412);
+          > span {
+            color: rgba(0, 0, 0, 0.647058823529412);
+          }
+        }
+      }
+    }
+  }
+}
+.signedContractBox {
+  margin-bottom: 20px;
+  .signedContract {
+    margin-bottom: 10px;
+  }
+}
+
+.containerBox {
+  table {
+    th {
+      font-weight: bold;
+    }
+  }
+}

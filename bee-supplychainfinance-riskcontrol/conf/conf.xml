@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dbset>
+    <neo4j>
+        <host>10.28.100.12</host>
+        <port>40049</port>
+        <user>neo4j</user>
+        <password>neo4j@kunlun</password>
+    </neo4j>
+    <Mysql>
+        <host>192.168.8.53</host>
+        <port>1433</port>
+        <database>SiFire</database>
+        <user>sa</user>
+        <password>test!</password>
+        <charset>utf8</charset>
+    </Mysql>
+    <elasticsearch>
+        <host>192.168.1.96:9200</host>
+    </elasticsearch>
+</dbset>

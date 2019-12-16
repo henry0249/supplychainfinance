@@ -1,0 +1,55 @@
+@import '../../../../utils/configs.less';
+
+.RiskRatio {
+
+  .spread {
+    font-size: 16;
+    cursor: pointer;
+  }
+
+  :global {
+    .ant-card-head-title {
+      color: #333;
+      font-weight: bold;
+    }
+  }
+}
+
+.rankBox {
+  margin-bottom: 16px;
+
+  .circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+  }
+
+  .name {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: @font-size-base;
+    color: @text-color;
+  }
+
+  .percent {
+    display: block;
+    width: 100%;
+    font-size: @font-size-base;
+    color: @text-color-secondary;
+  }
+
+  .count {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: @font-size-base;
+    color: @text-color;
+  }
+}

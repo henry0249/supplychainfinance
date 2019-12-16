@@ -1,0 +1,48 @@
+@import '~@/utils/configs.less';
+@import '~@/utils/utils.less';
+
+.app {
+  height: 210px;
+
+  .top {
+    display: flex;
+    flex-direction: row;
+    // align-items: baseline;
+    border-bottom: 1px solid @border-color-base;
+    height: 130px;
+
+    p {
+      flex-grow: 1;
+      padding: 10px;
+      margin-bottom: 0;
+      .clearfix();
+
+      .title {
+        .clearfix();
+
+        .name {
+          float: left;
+          color: @text-color-secondary
+        }
+
+        .tip {
+          float: right
+        }
+      }
+
+    }
+
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+
+
+  .index {
+    padding: 10px 0;
+    font-size: 30px;
+  }
+}

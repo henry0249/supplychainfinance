@@ -1,0 +1,151 @@
+@import '~@/common/configs.less';
+
+.body {
+  margin-top: 20px;
+  background-color: #FFFFFF;
+  padding: 20px 30px;
+  min-height: 630px;
+  margin: 24px 24px 0;
+
+  .title {
+    color: #000000;
+    font: 22px normal;
+  }
+
+  .top {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .btnBox {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  table {
+    th {
+      font-weight: bold;
+    }
+
+    th,
+    td {
+      text-align: center
+    }
+  }
+}
+
+.modal {
+  color: red;
+
+  .panel {
+    display: flex;
+    margin-top: 24px;
+    height: 400px;
+
+    .left {
+      min-height: 32px;
+      line-height: 32px;
+      width: 460px;
+      height: 440px;
+      overflow-y: auto;
+
+      .item {
+        display: flex;
+        min-height: 48px;
+        line-height: 32 px;
+        padding: 8px 15px;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 15px;
+
+        .label {
+          margin-right: 8px;
+          flex-grow: 1;
+          text-align: right;
+        }
+
+        .value {
+          padding: 0 8px;
+          flex-wrap: wrap;
+          border: 1px solid #d9d9d9;
+          line-height: 32px;
+          width: 230px;
+          border-radius: 5px;
+          background-color: @component-background;
+        }
+
+        .delete {
+          width: 32px;
+        }
+
+        &.active {
+          background-color: @gray-background;
+
+          .value {
+            border-color: rgba(24, 144, 255, 1)
+          }
+        }
+      }
+
+      .add {
+        border: 1px dotted @text-color-secondary;
+        color: @text-color;
+        line-height: 30px;
+        border-radius: 6px;
+        text-align: center;
+        margin: 0 42px;
+        cursor: pointer;
+      }
+    }
+
+    .right {
+      flex-grow: 1;
+      background-color: @gray-background;
+      display: flex;
+      flex-direction: column;
+
+      .top {
+        display: flex;
+        min-height: 48px;
+        line-height: 32px;
+        padding: 8px 15px;
+
+        .label {
+          margin-right: 8px;
+        }
+      }
+
+      .bottom {
+        padding: 15px;
+        margin: 15px;
+        flex-grow: 1;
+        background: #fff;
+        margin-top: 0;
+
+        .title {
+          border-bottom: 1px solid @border-color-base;
+          padding: 0 0 15px 15px;
+        }
+
+        .checkPanel {
+          padding: 8px 0;
+          display: flex;
+          flex-direction: column;
+          height: 300px;
+          overflow: auto;
+
+          :global(.ant-checkbox-wrapper + .ant-checkbox-wrapper) {
+            margin-left: 0
+          }
+
+          :global(.ant-checkbox-wrapper) {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+}

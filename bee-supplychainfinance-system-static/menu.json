@@ -1,0 +1,167 @@
+[
+      {
+        path: '/incoming',
+        icon: 'form',
+        name: '进件管理',
+        hideChildrenInMenu: true,
+        routes: [
+          {
+            path: '/incoming',
+            name: '进件管理',
+            routes: [
+              {
+                path: '/incoming/purchase/step1',
+              }, {
+                path: '/incoming/purchase/step2',
+              }, {
+                path: '/incoming/purchase/step3',
+              }, {
+                path: '/incoming/purchase/step4',
+              },
+            ],
+          },
+        ],
+      }, {
+        path: '/approval',
+        icon: 'form',
+        name: '审批管理',
+        routes: [
+          {
+            path: '/approval/projectapproval/index',
+            name: '立项审批',
+            hideChildrenInMenu: true,
+            routes: [
+              {
+                path: '/approval/projectapproval/index',
+              }, {
+                path: '/approval/projectapproval/handle',
+              },
+            ],
+          }, {
+            path: '/approval/deferred/index',
+            name: '延期提货',
+            hideChildrenInMenu: true,
+            routes: [
+              {
+                path: '/approval/deferred/index',
+              }
+            ],
+          }, {
+            path: '/approval/contract/index',
+            name: '合同审批',
+            hideChildrenInMenu: true,
+            routes: [
+              {
+                path: '/approval/contract/index',
+              }, {
+                path: '/approval/contract/detail',
+              },
+            ],
+          }, {
+            path: '/approval/settlement/index',
+            name: '结算审批',
+            hideChildrenInMenu: true,
+            routes: [
+              {
+                path: '/approval/settlement/index',
+              }
+            ]
+          }, {
+            path: '/approval/goods/index',
+            name: '提货申请',
+            hideChildrenInMenu: true,
+            routes: [
+              {
+                path: '/approval/goods/index',
+              }
+            ],
+          }, {
+            path: '/approval/warehouse/index',
+            name: '仓单审批',
+            hideChildrenInMenu: true,
+            routes: [
+              {
+                path: '/approval/warehouse/index',
+              }
+            ],
+          }, {
+            path: '/approval/warning/index',
+            name: '预警解除审批',
+            hideChildrenInMenu: true,
+            routes: [
+              {
+                path: '/approval/warning/index',
+              }, {
+                path: '/approval/warning/handle',
+              }
+            ],
+          }, {
+            path: '/approval/bail/index',
+            name: '保证金审批',
+            hideChildrenInMenu: true,
+            routes: [
+              {
+                path: '/approval/bail/index',
+              }
+            ],
+          }
+        ]
+      }, {
+        path: '/orderManage/index',
+        icon: 'form',
+        name: '订单管理',
+        hideChildrenInMenu: true,
+        routes: [
+          {
+            path: '/orderManage/index',
+          }, {
+            path: '/orderManage/details',
+          }, {
+            path: '/orderManage/contract/detail',
+          }, {
+            path: '/orderManage/settlement/edit',
+          }, {
+            path: '/orderManage/warning/detail',
+          },
+        ]
+      },
+      {
+        path: '/riskConfig',
+        name: '规则配置',
+        hideChildrenInMenu: true,
+        routes: [
+          {
+            path: '/riskConfig',
+          },
+          {
+            path: '/riskConfig/index',
+          }, {
+            path: '/riskConfig/configure',
+          },
+        ]
+      }, {
+        path: '/userManage',
+        name: '权限管理',
+        hideChildrenInMenu: true,
+        routes: [
+          {
+            path: '/userManage',
+          }, {
+            path: '/userManage/index',
+          }, {
+            path: '/userManage/team',
+          },
+        ]
+      }, {
+        path: '/board',
+        name: '用户看板',
+        hideChildrenInMenu: true,
+        routes: [
+          {
+            path: '/board',
+          }, {
+            path: '/board/index',
+          },
+        ]
+      }
+    ]

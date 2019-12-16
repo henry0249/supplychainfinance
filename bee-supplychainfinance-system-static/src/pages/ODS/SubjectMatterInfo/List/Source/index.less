@@ -1,0 +1,70 @@
+@import '~@/utils/configs.less';
+
+.container {
+  margin: 24px;
+  background-color: #FFFFFF;
+
+  .header {
+    position: relative;
+    padding: 20px 30px;
+    border-bottom: 1px solid @border-color-base;
+
+    h2 {
+      margin-top: 0.5rem;
+      font-weight: bold;
+    }
+  }
+
+  .select {
+    padding: 24px 30px 0;
+    border-bottom: 1px solid @border-color-base;
+  }
+
+  .body {
+    min-height: 580px;
+    padding: 24px 30px;
+
+    table {
+      th {
+        font-weight: bold;
+      }
+
+      th,
+      td {
+        text-align: center;
+      }
+
+    }
+  }
+
+  :global {
+    .ant-form-item {
+      display: flex;
+      align-items: center;
+    }
+
+    tr {
+      .ant-form-item {
+        display: block;
+        margin-bottom: 0;
+      }
+    }
+
+    .ant-form-item-label {
+      width: 120px;
+    }
+  }
+}
+
+.moadlForm {
+  :global {
+    .ant-form-item {
+      display: flex;
+      align-items: center;
+    }
+
+    .ant-form-item-label {
+      width: 120px;
+    }
+  }
+}

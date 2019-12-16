@@ -1,0 +1,129 @@
+@import '~antd/lib/style/themes/default.less';
+
+.stepForm {
+  // margin: 40px auto 0;
+  max-width: 100%;
+}
+
+.stepFormText {
+  margin-bottom: 10px;
+  :global {
+    .ant-form-item-label,
+    .ant-form-item-control {
+      line-height: 22px;
+    }
+  }
+}
+
+.result {
+  margin: 0 auto;
+  max-width: 560px;
+  padding: 24px 0 8px;
+}
+
+.desc {
+  padding: 0 56px;
+  color: @text-color-secondary;
+  h3 {
+    font-size: 16px;
+    margin: 0 0 12px 0;
+    color: @text-color-secondary;
+    line-height: 32px;
+  }
+  h4 {
+    margin: 0 0 4px 0;
+    color: @text-color-secondary;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 12px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .desc {
+    padding: 0;
+  }
+}
+
+.information {
+  line-height: 22px;
+  :global {
+    .ant-row:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+  .label {
+    color: @heading-color;
+    text-align: right;
+    padding-right: 8px;
+    @media screen and (max-width: @screen-sm) {
+      text-align: left;
+    }
+  }
+}
+
+.money {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 14px;
+}
+
+.uppercase {
+  font-size: 12px;
+}
+.warningBack{
+  margin-bottom: 10px
+}
+
+.deleteButton {
+  cursor: pointer;
+  position: relative;
+  top: 4px;
+  font-size: 24px;
+  color: #999;
+  transition: all .3s;
+}
+.deleteButton:hover {
+  color: #777;
+}
+.deleteButton[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.addInputBox{
+  border-radius:  0 3px 3px 0 !important;
+  border-right:1px solid #d9d9d9 !important;
+  margin-right: 10px; 
+}
+.stepTwoHead{
+  font-weight: 600;
+}
+.proveWrap{
+  position: relative;
+}
+.proveBox{
+  position: absolute;
+  left: 220px;
+  top: -5px;
+}
+.addBox{
+  margin-top: 10px;
+}
+.application{
+  margin-bottom: 10px;
+}
+.applicationDetail{
+  margin:20px 0;
+}
+.applicationHead{
+  font-size: 20px;
+  font-weight: 600;
+}
+.detailItem{
+  margin-left: 10%;
+}

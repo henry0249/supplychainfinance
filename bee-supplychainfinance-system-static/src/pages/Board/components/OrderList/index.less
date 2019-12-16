@@ -1,0 +1,52 @@
+.OrderListWrap {
+  .projectList {
+    :global {
+      .ant-card-meta-description {
+        height: 44px;
+        line-height: 22px;
+        overflow: hidden;
+      }
+      .ant-card-head-title {
+        color: #333;
+        font-weight: bold;
+      }  
+      .ant-card-grid{
+        width: 100%
+      }
+    }
+    .cardTitle {
+      span {
+        font-size: 14px;
+        font-weight: 650;
+      }
+      a {
+        margin-left: 12px;
+        line-height: 24px;
+        height: 24px;
+        display: inline-block;
+        vertical-align: top;
+        &:hover {
+        }
+      }
+    }
+
+    .projectItemContent {
+      display: flex;
+      margin-top: 8px;
+      overflow: hidden;
+      font-size: 12px;
+      height: 20px;
+      line-height: 20px;
+      span {
+        display: inline-block;
+        flex: 1 1 0;
+        &:hover {
+        }
+      }
+      .datetime {
+        flex: 0 0 auto;
+        float: right;
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.body{
+  padding: 24px;
+  box-sizing: border-box;
+}
+.container {
+  min-width: 1000px;
+  margin: 24px 32px;
+}
+.handle{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  // padding: 24px;
+  .step{
+      width: 35%;
+      height: 646px;
+      overflow-x: hidden;
+      background-color: white;
+
+  }
+  .formwrapper{
+      width: 63%;
+      height: 600px;
+      // background-color: aqua
+      .formHead{
+          display: inline-block;
+          width: 33%;
+          margin-bottom: 15px;
+          color: rgba(0, 0, 0, 0.84);
+          span{
+              font-family: 'PingFang SC Regular', 'PingFang SC';
+              font-weight: 400;
+              font-style: normal;
+              font-size: 14px;
+              color: rgba(51, 51, 51, 0.64);
+          }
+      }
+      .warning{
+          display: block;
+          background-color: rgba(255, 241, 240, 1);
+          box-sizing: border-box;
+          border-width: 1px;
+          border-style: solid;
+          border-color: rgba(255, 163, 158, 1);
+          border-radius: 5px;
+          padding: 15px 20px 0 20px;
+          margin-bottom: 10px;
+          position: relative;
+          color: black;
+          cursor: pointer;
+          word-break: break-all;
+          word-wrap: break-word;
+          .status{
+            position: absolute;
+            right: 9%;
+            top: 10%;
+          }
+      }
+  }
+}
+// .log{
+//   padding: 0 30px 0 0;
+//   width: 100%;
+// }
+.steps{
+  position: relative;
+  height: 42px;
+  .line{
+    position: absolute;
+    left: 5px;
+    top: 18px;
+  }
+  .stepTime{
+    position: absolute;
+    right: 10%;
+  }
+}

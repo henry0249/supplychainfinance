@@ -1,0 +1,58 @@
+@import '~@/utils/configs.less';
+
+.container {
+  margin: 24px;
+  background-color: #FFFFFF;
+
+  .header {
+    position: relative;
+    padding: 20px 30px;
+    border-bottom: 1px solid @border-color-base;
+
+    h2 {
+      margin-top: 0.5rem;
+      font-weight: bold;
+    }
+  }
+
+  .body {
+    padding: 30px 30px 0;
+    min-height: 600px;
+    border-bottom: 1px solid @border-color-base;
+
+    .p {
+      display: flex;
+      align-items: center;
+      height: 40px;
+
+      span {
+        display: block;
+        margin-bottom: 24px;
+      }
+
+      .label {
+        width: 130px;
+        text-align: right;
+      }
+    }
+  }
+
+  .footer {
+    padding: 16px 30px;
+  }
+
+  :global {
+    .ant-form-item {
+      display: flex;
+      align-items: center;
+    }
+
+    .ant-form-item-label {
+      width: 130px;
+    }
+
+    .ant-divider-horizontal {
+      margin-top: 0;
+    }
+  }
+}

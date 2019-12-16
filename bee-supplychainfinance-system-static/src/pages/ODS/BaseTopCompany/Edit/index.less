@@ -1,0 +1,44 @@
+@import '~@/utils/configs.less';
+
+.container {
+  margin: 24px;
+  background-color: #FFFFFF;
+
+  .header {
+    position: relative;
+    padding: 20px 30px;
+    border-bottom: 1px solid @border-color-base;
+
+    h2 {
+      margin-top: 0.5rem;
+      font-weight: bold;
+    }
+
+    .back {
+      position: absolute;
+      bottom: 20px;
+      right: 30px;
+    }
+  }
+
+  .body {
+    height: 600px;
+    padding: 24px 30px 48px;
+  }
+
+  .footer {
+    padding: 16px 30px;
+    border-top: 1px solid @border-color-base;
+  }
+
+  :global {
+    .ant-form-item {
+      display: flex;
+      align-items: center;
+    }
+
+    .ant-form-item-label {
+      width: 150px;
+    }
+  }
+}

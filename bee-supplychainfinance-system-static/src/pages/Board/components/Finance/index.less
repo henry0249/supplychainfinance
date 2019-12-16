@@ -1,0 +1,27 @@
+@import '~antd/lib/style/themes/default.less';
+
+.container {
+  background-color: @white;
+
+  .pricesBox {
+    padding: 20px 30px;
+    text-align: center;
+
+    &>div {
+      cursor: pointer;
+    }
+  }
+
+  .button {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  :global {
+    .ant-card-head-title {
+      color: #333;
+      font-weight: bold;
+    }
+  }
+}

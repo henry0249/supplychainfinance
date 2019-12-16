@@ -1,0 +1,113 @@
+@import '~@/common/configs.less';
+
+.container {
+  .header {
+    padding: 32px 24px;
+    background-color: #FFFFFF;
+
+    .col {
+      display: flex;
+      align-items: center;
+
+      .name {
+        padding-left: 20px;
+        font-weight: bold;
+        font-size: 20px;
+        color: @heading-color;
+      }
+    }
+  }
+
+  .body {
+    padding: 16px 24px;
+
+    table {
+      th {
+        font-weight: bold;
+      }
+
+      .td {
+        display: block;
+        max-width: 480px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  :global {
+    .ant-card-head-title {
+      font-weight: bold;
+    }
+  }
+}
+
+:global {
+  .ant-modal-title {
+    font-weight: bold;
+  }
+}
+
+.newModal {
+  :global {
+    .ant-form-item-label {
+      width: 120px;
+    }
+
+    .ant-modal-body {
+      padding: 54px 24px;
+    }
+  }
+}
+
+.configModal {
+  :global {
+    .ant-checkbox-wrapper {
+      margin-bottom: 12px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      span:nth-child(1) {
+        top: 0;
+      }
+
+      span:nth-child(2) {
+        flex: 1;
+      }
+    }
+
+    .ant-card-body {
+      height: 400px;
+      overflow: auto;
+    }
+
+    .ant-checkbox-wrapper+.ant-checkbox-wrapper {
+      margin-left: 0;
+    }
+  }
+}
+
+.userModal {
+  :global {
+    .ant-checkbox-wrapper {
+      margin-bottom: 12px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      span:nth-child(1) {
+        top: 0;
+      }
+
+      span:nth-child(2) {
+        flex: 1;
+      }
+    }
+
+    .ant-checkbox-wrapper+.ant-checkbox-wrapper {
+      margin-left: 0;
+    }
+  }
+}

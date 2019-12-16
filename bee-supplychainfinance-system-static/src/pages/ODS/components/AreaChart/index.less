@@ -1,0 +1,79 @@
+@import '~@/utils/configs.less';
+
+.app {
+  height: 450px;
+  // .name {
+  //   float: left;
+  //   color: @text-color-secondary
+  // }
+
+  .tip {
+    float: right
+  }
+
+  .form {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+
+    .title {
+      position: absolute;
+      left: 0;
+      font-size: @font-size-lg;
+      font-weight: bold
+    }
+
+    .monthRange {
+      display: flex;
+
+      span {
+        color: @text-color;
+        margin: 3px 10px;
+        padding: 3px 10px;
+        border-radius: @border-radius-sm;
+        cursor: pointer;
+        display: inline;
+
+        &.active {
+          color: @text-color-light;
+          background-color: @primary-color;
+        }
+      }
+    }
+  }
+
+  .footer {
+    .left {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      float: left;
+      margin-right: 50px;
+
+      div {
+        padding: 0 10px;
+
+        .value {
+          font-weight: bold
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      float: right;
+      margin-right: 50px;
+
+      div {
+        padding: 0 10px;
+      }
+    }
+  }
+
+  .index {
+    padding: 10px 0;
+    font-size: 30px;
+  }
+}

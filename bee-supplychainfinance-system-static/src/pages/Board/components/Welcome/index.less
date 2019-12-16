@@ -1,0 +1,91 @@
+.headerWrap {
+    width: 100%;
+    background-color: #fff;
+    height: 152px;
+
+    .HeaderContent {
+        display: flex;
+        height: 100%;
+        -ms-flex-align: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .avatar {
+            flex: 0 1 72px;
+            margin-bottom: 8px;
+            margin-left: 30px;
+
+            &>span {
+                border-radius: 72px;
+                display: block;
+                width: 72px;
+                height: 72px;
+            }
+        }
+
+        .content {
+            position: relative;
+            top: 4px;
+            margin-left: 24px;
+            flex: 1 1 auto;
+            line-height: 22px;
+
+            .contentTitle {
+                font-size: 20px;
+                line-height: 28px;
+                font-weight: 500;
+                margin-bottom: 12px;
+            }
+        }
+
+        .extraContent {
+            float: right;
+            white-space: nowrap;
+            margin-right: 10%;
+
+            .statItem {
+                padding: 0 32px;
+                position: relative;
+                display: inline-block;
+
+                >p:first-child {
+                    line-height: 22px;
+                    margin-bottom: 4px;
+                }
+
+                .titleNum {
+                    font-size: 30px;
+                    color: rgba(0, 0, 0, 0.847058823529412);
+                }
+
+                >p {
+                    font-size: 14px;
+                    line-height: 38px;
+                    margin: 0;
+
+                    >span {
+                        font-size: 20px;
+                    }
+                }
+
+                &:after {
+                    position: absolute;
+                    background-color: rgba(233, 233, 233, 1);
+                    top: 8px;
+                    right: 0;
+                    width: 1px;
+                    height: 40px;
+                    content: '';
+                }
+
+                &:last-child {
+                    padding-right: 0;
+
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

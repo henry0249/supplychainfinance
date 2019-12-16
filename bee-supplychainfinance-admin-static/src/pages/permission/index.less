@@ -1,0 +1,89 @@
+@import '~antd/lib/style/themes/default.less';
+.confirm {
+  :global {
+    .ant-popover-buttons {
+      display: none;
+    }
+    .anticon {
+      color: red;
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  min-width: 1000px;
+
+  .crumb {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    margin: 20px 30px;
+    background-color: #ffffff;
+  }
+  .titleRow {
+    width: 326px;
+    position: relative;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    margin: 24px 24px 0;
+    .div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      span:nth-child(1) {
+        color: #999999;
+        font: 16px 'Microsoft YaHei';
+      }
+      span:nth-child(2) {
+        margin-top: 10px;
+        color: #333333;
+        font: 24px 'Microsoft YaHei';
+      }
+    }
+  }
+
+  .body {
+    margin-top: 20px;
+    background-color: #ffffff;
+    min-height: 630px;
+    padding: 20px 30px;
+    margin: 20px 30px;
+    .formBox {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .formItem {
+        display: flex;
+        margin-bottom: 0;
+      }
+    }
+    :global {
+      .ant-pagination {
+        float: none;
+        margin: 60px 0;
+      }
+    }
+
+    .textDiv p {
+      width: 280px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      margin: 0;
+    }
+    .colSpan {
+      color: red;
+      position: absolute;
+      top: -10px;
+      margin-left: 5px;
+    }
+  }
+}

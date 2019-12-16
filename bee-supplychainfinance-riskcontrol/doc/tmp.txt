@@ -1,0 +1,2 @@
+http://182.139.182.247:9200/index_risk_order_entrust_buy_detail/order_entrust_buy_detail/_search
+http://106.14.2.42:8011/entrustedProcurement?companyEntrust=%E2%80%9D%E9%87%8D%E5%BA%86%E6%B5%A9%E7%94%9F%E8%81%9A%E4%BA%BF%E5%AE%9E%E4%B8%9A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E2%80%9D&companySupplier=%E2%80%9D%E5%B3%A8%E8%BE%B9%E7%91%9E%E5%87%AF%E9%80%9A%E8%B4%B8%E6%98%93%E6%9C%89%E9%99%90%E8%B4%A3%E4%BB%BB%E5%85%AC%E5%8F%B8%E2%80%9D&tast=%22%E7%85%A4%E7%82%AD%22&applyId=%221902210059801022%22

@@ -1,0 +1,97 @@
+@import '~@/utils/configs.less';
+
+.app {
+  .item {
+    background-color: #fff;
+    color: #363636;
+    cursor: pointer;
+    padding: 30px 15px;
+
+    .role {
+      padding-left: 15px;
+      color: @text-color-secondary
+    }
+
+    .name {
+      padding-left: 15px;
+      font-size: @heading-3-size;
+      margin-top: 5px;
+      color: @heading-color
+    }
+
+    .statistic {
+      text-align: center;
+
+      :global {
+        .ant-statistic-content {
+          color: @text-color-secondary;
+          font-weight: 500;
+          font-size: @font-size-lg
+        }
+      }
+    }
+
+    margin-bottom: 30px
+  }
+
+
+  .content {
+    min-height: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  :global {
+    .ant-card-head-title {
+      color: #333;
+      font-weight: bold;
+    }
+
+    .antd-pro-charts--pie-hasLegend {
+      display: flex;
+      flex-wrap: wrap;
+      height: 100%;
+      justify-content: space-around;
+      align-items: stretch;
+    }
+
+    .antd-pro-charts--pie-legend {
+      // min-width: 400px;
+      padding-right: 6em;
+      margin: 0;
+      position: relative;
+      margin-top: 30px;
+      transform: inherit;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    @media (max-width: 1200px) {
+      .antd-pro-charts--pie-chart {
+        width: calc(100% - 200px) !important;
+      }
+    }
+
+    @media (min-width: 1200px) and (max-width:1600px) {
+      .antd-pro-charts--pie-chart {
+        width: calc(100% - 400px) !important;
+      }
+    }
+
+    @media (min-width: 1600px) {
+      .antd-pro-charts--pie-chart {
+        width: calc(40%) !important;
+      }
+    }
+  }
+
+  .pie {
+    :global {
+      .pie-stat {
+        font-size: 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,107 @@
+@import '~antd/lib/style/themes/default.less';
+
+.container {
+  width: 100%;
+
+  :global {
+
+    .ant-row.ant-form-item {
+      width: 400px;
+
+      @media screen and (max-width: @screen-sm) {
+        width: 80%;
+      }
+    }
+  }
+
+  .buttons {
+    text-align: right
+  }
+
+  .header {
+    background-color: @white;
+    position: relative;
+
+    .form {
+      padding: 0 30px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+
+
+      //   .buttons {
+      //     margin-left: 100px;
+      //     width: 30%;
+      //     display: flex;
+      //   }
+    }
+
+  }
+
+  .export {
+    padding: 5px 0 0 30px;
+
+    .loading {
+      color: @text-color-secondary
+    }
+  }
+
+  .body {
+    min-height: 480px;
+    margin: 20px 30px;
+    // padding: 20px;
+    position: relative;
+    background-color: @white;
+
+    :global {
+      .ant-table-fixed {
+        table-layout: fixed;
+      }
+
+      .ant-table-tbody>tr>td {
+        word-wrap: break-word;
+        word-break: break-all;
+      }
+    }
+
+    .tableBox {
+
+      // th,
+      // td {
+      //     padding: 0;
+      // }
+
+      th {
+        height: 40px;
+        color: #333333;
+        text-align: center;
+        font: bold 14px;
+        background-color: #E5F1FF;
+        border: 1px #E5F1FF solid;
+      }
+
+      // td {
+      //     padding: 0 20px;
+      //     color: #333333;
+      //     text-align: center;
+      //     white-space: nowrap;
+      //     font-size: 14px;
+      //     line-height: 40px;
+      //     background-color: @white;
+      //     border: 1px #E5F1FF solid;
+      // }
+    }
+  }
+}
+
+:global {
+  .select {
+
+    //给该select框加的className
+    .ant-select-selection--multiple {
+      height: 60px;
+      overflow-x: hidden;
+    }
+  }
+}

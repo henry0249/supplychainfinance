@@ -1,0 +1,41 @@
+@import '~@/utils/configs.less';
+
+.container {
+  margin: 24px;
+  min-height: 810px;
+  background-color: #FFFFFF;
+
+  .header {
+    position: relative;
+    padding: 20px 30px;
+    border-bottom: 1px solid @border-color-base;
+
+    h2 {
+      margin-top: 0.5rem;
+      font-weight: bold;
+    }
+  }
+
+  .body {
+    padding: 24px 30px;
+  }
+
+  :global {
+    .ant-card-body {
+      padding: 24px 0;
+    }
+
+    .ant-form-item {
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    tr {
+      .ant-form-item {
+        display: block;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

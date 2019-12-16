@@ -1,0 +1,51 @@
+@import '~@/utils/configs.less';
+
+.app {
+  margin: 20px 30px;
+  background-color: @component-background;
+
+  .header {
+    position: relative;
+    padding: 20px 30px;
+    border-bottom: 1px solid @border-color-base;
+
+    .title {
+      color: @heading-color;
+      font-size: @heading-3-size;
+    }
+
+    .button {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .button1 {
+      position: absolute;
+      bottom: 20px;
+      right: 120px;
+    }
+  }
+
+  .tab {
+    padding: 20px 15px;
+    margin-top: 20px;
+
+    .item {
+      padding: 20px 15px;
+      background-color: @body-background;
+
+      .content {
+        background-color: @component-background;
+        min-height: 400px;
+        margin-bottom: 30px;
+
+        .contentTitle {
+          color: @heading-color;
+          font-size: @heading-3-size;
+          padding: 10px 15px;
+        }
+      }
+    }
+  }
+}

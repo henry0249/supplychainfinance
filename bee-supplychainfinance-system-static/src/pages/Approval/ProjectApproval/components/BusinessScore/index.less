@@ -1,0 +1,107 @@
+.BusinessScore {
+  // width: 756px;
+  .wrap {
+    margin-top: 15px;
+    width: 100%;
+    height: 430px;
+    background-color: #ffffff;
+    overflow-y: auto;
+    .header {
+      width: 100%;
+      color: #333333;
+      font-size: 16px;
+      font-weight: bold;
+      border-bottom: 1px solid #dddddd;
+      p {
+        padding: 10px 0 0 30px;
+      }
+    }
+    .tabs {
+      :global(.ant-tabs-bar){
+        border-top: 1px solid #e8e8e8 !important;
+        border-bottom: 0;
+        padding-left: 30px;
+      }
+      :global(.ant-tabs-ink-bar) {
+          top: 0 !important;
+        }
+      :global(.ant-tabs-tabpane) {
+          overflow-y: auto;
+          height: 303px;
+        }
+    }
+    .content {
+      width: 98%;
+      margin-left: 10px;
+      table {
+        width: 100%;
+        thead th {
+          border: 1px solid #eee;
+          text-indent: 10px;
+          height: 50px;
+          border-top: 0;
+        }
+        thead th:first-child{
+          width: 80%;
+        }
+        thead th:last-child{
+          width: 20%;
+        }
+        tbody td {
+          height: 50px;
+          text-indent: 10px;
+          color: #1890FF;
+          border: 1px solid #eee;
+        }
+      }
+    }
+  }
+}
+
+.BusinessScoreNo {
+  // width: 756px;
+  .wrap {
+    margin-top: 15px;
+    width: 100%;
+    height: 430px;
+    background-color: #ffffff;
+    .header {
+      width: 100%;
+      color: #333333;
+      font-size: 16px;
+      font-weight: bold;
+      border-bottom: 1px solid #dddddd;
+      p {
+        padding: 10px 0 0 30px;
+      }
+    }
+    .content {
+      text-align: center;
+      vertical-align: middle;
+      height: 260px;
+      img {
+        border-width: 0px;
+        width: 273px;
+        height: 149px;
+        margin-top: 40px;
+      }
+      p {
+        padding: 20px 0 10px 0;
+        font-size: 16px;
+        color: #989898;
+        font-weight:700;
+      }
+    }
+    .footer {
+      text-align: center;
+      p {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        color: #989898;
+        text-align: center;
+        line-height: 22px;
+      }
+    }
+  }
+}

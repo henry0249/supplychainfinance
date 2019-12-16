@@ -1,0 +1,17 @@
+调用示例：
+import requests, json
+
+modelName = 'entrustedProcurement'
+input = {'companyEntrust': u'阿里巴巴(中国)网络技术有限公司', 'companySupplier': u'阿里巴巴(中国)网络技术有限公司',
+         'companyGoods': u'阿里巴巴(中国)网络技术有限公司', 'companyGuarantee': u'阿里巴巴(中国)网络技术有限公司', 'tast': u'铬铁'}
+html = requests.post('http://106.14.2.42:8011/{}'.format(modelName),
+                     data=json.dumps(input, ensure_ascii=False).encode('utf-8'))
+print json.loads(html.text)['index']
+
+参数说明：
+modelName：模型名称，可选项包括：entrustedProcurement(委托采购)、consignmentSales(委托销售)
+[companyEntrust]：委托企业名称
+[companySupplier]：供应商名称
+[companyGoods]：货代公司名称
+[companyGuarantee]：担保公司名称
+[tast]：货物名称

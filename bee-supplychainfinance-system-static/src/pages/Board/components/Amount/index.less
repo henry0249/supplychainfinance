@@ -1,0 +1,79 @@
+@import '../../../../utils/configs.less';
+
+.container {
+  margin-top: 24px;
+  background-color: #FFFFFF;
+
+  .rowBox {
+    padding-bottom: 24px;
+
+    .title {
+      display: block;
+      padding-bottom: 0;
+      font: 700 16px normal;
+      color: @heading-color;
+    }
+  }
+
+  .barBox {
+    padding: 20px 40px;
+  }
+
+  .ranking {
+    padding: 20px 0px;
+
+    .item {
+      margin-bottom: 20px;
+    }
+  }
+
+  .title {
+    display: block;
+    padding-bottom: 24px;
+    font: 700 16px normal;
+    color: @heading-color;
+  }
+
+  :global {
+    .ant-card-extra {
+      padding-top: 0;
+    }
+  }
+}
+
+.first {
+  width: 20px;
+  height: 20px;
+  color: #FFFFFF;
+  font: @font-size-base/20px normal;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #191970;
+}
+
+.num {
+  width: 20px;
+  height: 20px;
+  color: @text-color;
+  font: @font-size-base/20px normal;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #d9d9d9;
+}
+
+.name {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: @font-size-base;
+  color: @text-color;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}

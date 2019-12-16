@@ -1,0 +1,52 @@
+.container {
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  .title {
+    display: block;
+    padding: 24px 30px 0;
+    color: #333333;
+    font: 650 16px/24px normal;
+  }
+  .content {
+    padding: 0 30px 15px;
+    .panel {
+      .header {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        :global(.ant-form-item-with-help) {
+          margin-bottom: 0 !important
+        }
+        .inputNumber {
+          width: 70px;
+          margin-right: 10px;
+        }
+        .after {
+          position: absolute;
+          top: 50%;
+          left: 86px;
+          transform: translateY(-50%);
+        }
+        .deleteBtn {
+          display: block;
+          position: absolute;
+          top: 50%;
+          right: 20px;
+          transform: translateY(-50%);
+          color: #1890FF;
+          font: 14px/22px normal;
+        }
+      }
+
+      .formBox {
+        margin: 20px 25px 0;
+        display: flex;
+        flex-wrap: wrap;
+        .formItem {
+          width: 28%;
+          margin-right: 5%;
+        }
+      }
+    }
+  }
+}

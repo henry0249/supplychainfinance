@@ -1,0 +1,75 @@
+.header {
+  padding: 20px 30px;
+  background-color: #ffffff;
+  .info {
+    display: flex;
+    justify-content: space-between;
+    .left {
+      width: 80%;
+      .name {
+        margin: 17px 0;
+        display: flex;
+        align-items: center;
+        .company {
+          margin-left: 16px;
+          color: #000000;
+          font: 700 20px normal; 
+        }
+      }
+      .information {
+        width: 100%;
+        .row {
+          display: flex;
+          div {
+            width: 25%;
+            display: flex;
+            color: #000000;
+            span {
+              color: #000000;
+              width: 84px;
+              text-align: right;
+            }
+            span + span {
+              flex: 1;
+              text-align: left;
+            }
+          }
+        }
+        .row + .row {
+          margin-top: 10px;
+        }
+      }
+    }
+    .right {
+      width: 20%;
+      .btnBox {
+        display: flex;
+        justify-content: flex-end;
+        margin: 17px 0;
+        min-height: 32px;
+        button {
+          margin-left: 10px;
+        }
+      }
+      .stateBox {
+        display: flex;
+        justify-content: flex-end;
+        .item {
+          display: flex;
+          flex-direction: column;
+          span:nth-child(1) {
+            text-align: right;
+            color: #8d8d8d;
+            font: 400 14px normal;
+          }
+          span:nth-child(2) {
+            margin-top: 5px;
+            text-align: right;
+            color: #272727;
+            font: 400 20px normal;
+          }
+        }
+      }
+    }
+  }
+}

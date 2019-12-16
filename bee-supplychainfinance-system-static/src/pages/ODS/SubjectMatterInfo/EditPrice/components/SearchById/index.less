@@ -1,0 +1,35 @@
+@import '~@/utils/configs.less';
+
+.container {
+  background-color: #FFFFFF;
+
+  table {
+    th {
+      font-weight: bold;
+    }
+
+    th,
+    td {
+      text-align: center;
+    }
+  }
+
+  :global {
+    .ant-card-body {
+      padding: 24px 32px !important;
+    }
+
+    .ant-form-item {
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    tr {
+      .ant-form-item {
+        display: block;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.container {
+  width: 100%;
+  min-width: 1000px;
+  min-height: 640px;
+  .top {
+    margin: 0 30px;
+    height: 82px;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    .breadcrumb {
+      padding: 14px 20px;
+      font-weight: bold;
+    }
+    .title {
+      padding: 0 20px;
+      display: block;
+      color: #333333;
+      font: bold 16px normal;
+    }
+  }
+  .body {
+    margin: 20px 30px 20px;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    .boxTitle {
+      display: block;
+      height: 56px;
+      padding-left: 20px;
+      color: #333333;
+      font: bold 16px/56px normal;
+      border-bottom: 1px solid #f0f2f9;
+    }
+    .main {
+      padding: 30px 0;
+      border-bottom: 1px solid #f0f2f9;
+      .formitem {
+        &>div:nth-child(1) {
+          width: 140px;
+        }
+        .upload {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 84px;
+          height: 84px;
+          background: #f0f2f9;
+          border-radius: 3px;
+        }
+      }
+    }
+    .footer {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 76px;
+      button {
+        margin-right: 20px;
+        width: 100px;
+        height: 36px;
+      }
+      button+button {
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+.upload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 84px;
+  height: 84px;
+  background: #f0f2f9;
+  border-radius: 3px;
+}
